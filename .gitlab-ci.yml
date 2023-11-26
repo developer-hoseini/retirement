@@ -1,0 +1,7 @@
+stages:          # List of stages for jobs, and their order of execution
+  - deploy
+deploy-job:       # This job runs in the build stage, which runs first.
+  stage: deploy
+  script:
+    - echo "Deploying the site..."
+    - rsync -atv --delete --progress --exclude '.git' --exclude '.gitlab-ci.yml' ./ retirement@172.30.30.81:/home/retirement/public_html    

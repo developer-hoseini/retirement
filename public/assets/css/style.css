@@ -1,0 +1,101 @@
+@font-face {
+    font-family: Vazir FD;
+    src: url("../font/Vazir-FD.ttf");
+}
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    direction: rtl;
+    text-align: right;
+    background-color: #f1f1f1;
+    -webkit-tap-highlight-color: transparent;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: Vazir FD, sans-serif;
+}
+
+.rtl {
+    direction: rtl;
+}
+
+.ltr {
+    direction: ltr;
+}
+.header-nav {
+	height: 110px !important;	
+	background: rgba(0, 55, 123, 0.8);	
+}
+.navbar-brand {
+	right: 145px;
+	padding-right: 205px !important;	
+	color: white !important;
+}
+.logo {
+	margin-left: 100px;
+}
+.side-menu {
+	background: linear-gradient(180deg, #00377B 0%, rgba(0, 55, 123, 0.55) 100%) !important;
+	top: 310px !important;
+}
+.side-menu li span {
+	color: white;
+}
+.user-icon {
+	font-size: 75px;
+}
+.user-icon, 
+.user-name,
+.user-id,
+.list-group-item> a {
+	color: white;
+}
+.user-name,
+.user-id {
+	font-size: 22px;
+}
+#deviceSettings {
+	margin-top: 320px ;
+	height: 97px;	
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-bottom: 15px;		
+	padding-right: 15px;
+}
+#deviceSettings div {
+	background: rgba(0, 55, 123, 0.8);	
+	width: 420px;			
+}
+#deviceSettings p {
+	color: white;
+}
+.device-settings-table {
+	background: rgba(0, 55, 123, 0.8);
+	color: white;
+	border-radius: 5px;
+	width: 600px;
+}
+.footer-nav {
+	background: rgba(0, 55, 123, 0.55);
+	height: 60px;	
+}	
+.copy-right-div {
+	color: white;
+}
+#payment-info {
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-bottom: 15px;		
+	padding-right: 15px;
+}
+.device-settings-table {
+	background: rgba(255, 255, 255, 0.8);
+	color: black;
+	border-radius: 5px;
+	width: 600px;
+}

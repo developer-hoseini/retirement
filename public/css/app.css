@@ -1,0 +1,53 @@
+@charset "UTF-8";
+body {
+  text-align: right;
+}
+
+/*   ---  Additional Styles  ---   */
+.tinymce ul,
+#categoriesUL {
+  list-style-type: none;
+}
+
+#categoriesUL {
+  margin: 0;
+  padding: 0;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */ /* IE 10+ */
+  user-select: none;
+}
+
+.caret::before {
+  content: "  +  ";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+  margin-left: 6px;
+}
+
+.caret-down::before {
+  content: "˗";
+}
+
+#categoriesUL .form-check {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+/*   End Categories Css */
+.toasted-container .toasted .fa, .toasted-container .toasted .fab, .toasted-container .toasted .far, .toasted-container .toasted .fas, .toasted-container .toasted .material-icons, .toasted-container .toasted .mdi {
+  margin-left: 0.5rem !important;
+  margin-right: -0.4rem !important;
+}

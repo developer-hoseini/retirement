@@ -1,0 +1,236 @@
+@font-face {
+    font-family: Vazir FD;
+    src: url("../font/Vazir-FD.ttf");
+}
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    direction: rtl;
+    text-align: right;
+    background-color: #f1f1f1;
+    -webkit-tap-highlight-color: transparent;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: Vazir FD, sans-serif;
+}
+
+.rtl {
+    direction: rtl;
+}
+
+.ltr {
+    direction: ltr;
+}
+.header-nav {
+	height: 110px !important;	
+	background: rgba(0, 55, 123, 0.8);	
+}
+main {
+    padding-top: 110px;
+    min-height: 100vh;
+    padding-right: 280px;
+    transition: all 0.2s;
+}
+
+main.without-menu-space {
+    padding-right: 0;
+}
+.org-li {
+	margin-right: 45px;
+}
+.org-li> p {
+	color: white !important;
+}
+.side-menu-toggle-i,
+.org-li p {
+	color: white !important;
+}
+.org-li p {
+	padding-right: 45px;
+	margin-top: 35px;
+}
+.side-menu {
+	background: linear-gradient(180deg, #00377B 0%, rgba(0, 55, 123, 0.55) 100%) !important;
+	top: 110px !important;
+	z-index:-999;
+}
+.user-icon {
+	font-size: 75px;
+}
+.user-icon, 
+.user-name,
+.user-id,
+.list-group-item> a {
+	color: white;
+}
+.user-name,
+.user-id {
+	font-size: 22px;
+}
+#deviceSettings {
+	margin-top: 320px ;
+	height: 97px;	
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-bottom: 15px;		
+	padding-right: 15px;
+}
+#deviceSettings div {
+	background: rgba(0, 55, 123, 0.8);	
+	width: 420px;			
+}
+#deviceSettings p {
+	color: white;
+}
+.device-settings-table {
+	background: rgba(0, 55, 123, 0.8);
+	color: white;
+	border-radius: 5px;
+	width: 600px;
+}
+.list-group-item,
+.list-group-item> a {
+	background-color:rgba(255,255,255,.0);
+}
+.list-group-item> a {
+	padding-right: 20px;	
+}
+.footer-nav {
+	background: rgba(0, 55, 123, 0.55);
+	height: 60px;	
+}	
+@media screen and (max-width: 992px) {
+    main {
+        padding-right: 0 !important;
+    }
+}
+
+.overlay{
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+    background-color: #333;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s;
+}
+.overlay.show{
+    visibility: visible;
+    opacity: 0.6;
+}
+
+nav.navbar {
+    height: 60px;
+}
+
+nav > .container-fluid {
+    height: 100%;
+}
+
+nav .navbar-nav {
+    flex: 1;
+    flex-direction: row !important;
+    align-items: center;
+}
+
+nav .navbar-nav .nav-item {
+    padding: 0 8px;
+}
+
+nav .navbar-nav .nav-item a, nav .navbar-nav .nav-item a i {
+    font-size: 14px;
+    color: #333;
+}
+
+nav .navbar-nav .nav-item a i {
+    font-size: 20px;
+    display: block;
+}
+
+nav .side-menu {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 280px;
+    border-left: 1px solid #ebebeb;
+    z-index: 100;
+    transition: all 0.2s;
+}
+
+nav .side-menu.hide {
+    right: -280px;
+}
+
+nav .side-menu .img-thumbnail{
+    width: 60px;
+}
+
+nav .side-menu .accordion-body{
+    padding: 0;
+}
+
+nav .side-menu .accordion-body .accordion-body{
+    padding-right: 12px;
+}
+
+nav .side-menu > .list-group {
+    height: calc(100% - 113px);
+    overflow-x: auto;
+}
+nav .side-menu {
+    height: calc(100% - 170px);
+
+}
+
+.btn {
+    font-size: 14px;
+    height: 35px;
+    line-height: 23px;
+}
+
+.modal-footer {
+    justify-content: flex-start;
+}
+
+.card {
+    padding: 12px;
+}
+
+.form-label {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.valid-feedback, .invalid-feedback {
+    display: block;
+    font-size: 10px;
+}
+
+.pagination {
+    margin: 16px 0 0 0;
+}
+.accordion .active {
+    font-weight: 600;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+}
+.mb8p, [for|="inp"] {
+    margin-bottom: 8px;
+}
+.mb12p, [id|="inp"] {
+    margin-bottom: 12px;
+}
